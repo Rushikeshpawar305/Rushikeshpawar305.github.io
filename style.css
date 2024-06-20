@@ -294,7 +294,6 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
 }
 
 .about-pic {
@@ -331,6 +330,52 @@ section {
 /* EXPERIENCE SECTION */
 
 #experience {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.section__text__p1 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.experience-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Adds space between each experience entry */
+}
+
+.experience {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.experience h3 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.experience p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.duration {
+  font-style: italic;
+  color: #999;
+}
+
+#experience {
   position: relative;
 }
 
@@ -338,13 +383,14 @@ section {
   color: rgb(85, 85, 85);
   font-weight: 600;
   font-size: 1.75rem;
-  margin-bottom: 2rem;
+  margin-bottom: 10rem;
 }
 
 .experience-details-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  padding: 50px;
 }
 
 .article-container {
@@ -389,8 +435,9 @@ article .icon {
 
 .project-img {
   width: 100%;
-  height: auto;
+  height: 100%;
   border-radius: 2rem;
+  max-width: fit-content;
 }
 
 .project-content {
@@ -411,7 +458,6 @@ article .icon {
   border-radius: 0.5rem;
   margin-top: 1rem;
 }
-
 
 /* CONTACT */
 
