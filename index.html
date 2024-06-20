@@ -337,7 +337,7 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/password.png"
+                src="./assets/password.jpeg"
                 alt="Project 2"
                 class="project-img"
               />
@@ -357,7 +357,7 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/to do.jpeg"
+                src="./assets/to do.png"
                 alt="Project 3"
                 class="project-img"
               />
@@ -428,7 +428,11 @@
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a href="mailto:rushipawar0305@gmail.com">Example@gmail.com</a></p>
+          <p>
+            <a href="mailto:rushipawar0305@gmail.com"
+              >rushipawar0305@gmail.com</a
+            >
+          </p>
         </div>
         <div class="contact-info-container">
           <img
@@ -444,6 +448,7 @@
         </div>
       </div>
     </section>
+
     <footer>
       <nav>
         <div class="nav-links-container">
@@ -456,8 +461,16 @@
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2023 Rushikesh Pawar. All Rights Reserved.</p>
+      <p id="footer-text"></p>
     </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const currentYear = new Date().getFullYear();
+        const footerText = document.getElementById("footer-text");
+        footerText.innerHTML = `Copyright &#169; ${currentYear} Rushikesh Pawar. All Rights Reserved.`;
+      });
+    </script>
     <script src="script.js"></script>
   </body>
 </html>
